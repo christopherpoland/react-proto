@@ -7,6 +7,7 @@ it is better to include it here in order to be consistent.
 */
 
 export { Button } from 'components/button/Button'
+export { SocialButton } from 'components/social-button/SocialButton'
 export { Counter } from 'components/counter/Counter'
 export { ErrorBoundary } from 'components/error-boundary/ErrorBoundary'
 export { Image } from 'components/image/Image'

@@ -1,15 +1,18 @@
 .button {
-  padding: 10px;
-  border: 2px solid var(--secondary-color);
-  border-radius: var(--border-radius-small);
-  background-color: var(--main-bg-color);
-  color: var(--secondary-color);
+  padding: 16px;
+  border: 2px solid var(--primary-button-color);
+  border-radius: var(--border-radius);
+  background-color: var(--primary-button-color);
+  color: var(--grey-color);
   cursor: pointer;
-  text-transform: uppercase;
   transition: all 0.3s ease-out;
-
   &:hover {
-    background-color: var(--secondary-color);
+    background-color: var(--primary-button-color);
     color: var(--main-bg-color);
   }
+  &:disabled {
+    cursor: not-allowed;
+    background: #e0e0e0;
+  }
+  transition: background-color 0.2s ease;
 }

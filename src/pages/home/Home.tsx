@@ -40,7 +40,7 @@ const Home: FC = (): ReactElement => {
           dispatch(increment())
         }}
       >
-        {t.homeButtonText}
+        {'Save as Draft'}
       </Button>
     </div>
   )

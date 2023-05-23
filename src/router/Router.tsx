@@ -1,7 +1,7 @@
 import { RouteObject } from 'react-router-dom'
 
 import { ROUTE_CONSTANTS } from 'constants/routeConstants'
-import { About, Fetch, Home, NotFound } from 'pages'
+import { About, Fetch, Home, Login, NotFound } from 'pages'
 
 const routes: RouteObject[] = [
   {
@@ -19,6 +19,10 @@ const routes: RouteObject[] = [
   {
     path: ROUTE_CONSTANTS.ABOUT,
     element: <About />
+  },
+  {
+    path: ROUTE_CONSTANTS.LOGIN,
+    element: <Login />
   },
   {
     path: ROUTE_CONSTANTS.NOT_FOUND,

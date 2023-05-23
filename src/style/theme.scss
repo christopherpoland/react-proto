@@ -7,6 +7,9 @@
   --primary-color: rgb(54 83 91);
   --secondary-color: rgb(118 158 162);
   --main-bg-color: rgb(255 255 255);
+  --dark-bg-color: #333333;
+  --grey-color: #FFFFFF;
+  --primary-button-color: #f8a504;
 }
 
 @mixin dark-theme {
@@ -18,10 +21,13 @@
   --primary-color: rgb(225 246 252);
   --secondary-color: rgb(154 171 173);
   --main-bg-color: rgb(19 19 19);
+  --dark-bg-color: #333333;
+  --grey-color: #FFFFFF;
+
 }
 
 :root {
-  --border-radius: 10px;
+  --border-radius: 16px;
   --border-radius-small: 3px;
 
   @include light-theme;

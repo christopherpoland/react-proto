@@ -1,0 +1,47 @@
+.login {
+    min-width: 647px;
+    min-height: 400px;
+    border-radius: var(--border-radius);
+    background: var(--main-bg-color);
+  }
+.third {
+    width: 247px;
+    height: 400px;
+    padding: 20px;
+    background: var(--dark-bg-color) padding-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .logoContainer {
+        width: 147px;
+        height: 82px;
+        display: flex;
+        justify-content: center;
+        margin: 45px 0 40px 0;
+    }
+    div {
+        color: var(--grey-color);
+        font-size: 14px;
+        text-align: center;
+        font-weight: 300;
+    }
+    .loginb {
+        max-width: 50px;
+        max-height: 25px;
+        display: 'flex';
+        align-items: 'center';
+        justify-content: 'center';
+        margin: '10px';
+    }
+    .logo {
+        max-width: 25px;
+        max-height: 25px;
+        margin: 0 auto;
+    }
+    .buttoncont {
+        display: flex;
+        gap: 10px;
+        margin: 20px;
+    }
+  }
+  

@@ -19,12 +19,14 @@ const serverRenderer =
   (chunkExtractor: ChunkExtractor): RequestHandler =>
     async (req: Request, res: Response) => {
       const isPageAvailable = Object.values(ROUTE_CONSTANTS).includes(req.path)
-
+      console.log(req.path)
       if (!isPageAvailable) {
         req.url = ROUTE_CONSTANTS.NOT_FOUND
+        console.log('ohhhhhhhh')
       }
 
       const location: string = req.url
+      console.log(location, 'hiiiii')
 
       /*
         Check user accepted languages. If it is different from the default

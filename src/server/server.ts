@@ -15,7 +15,7 @@ const runServer = (hotReload?: () => RequestHandler[]): void => {
   const app = express()
   const statsFile = path.resolve('./dist/stats.json')
   const chunkExtractor = new ChunkExtractor({ statsFile })
-
+  console.log("An error happened");
   app
     .use(nonce)
     .use(csp)
@@ -35,6 +35,10 @@ const runServer = (hotReload?: () => RequestHandler[]): void => {
   }
 
   app.get('/*', serverRenderer(chunkExtractor))
+  
+  app.delete('/', (_req, res) => {
+    res.send('hi')
+  })
 
   app.listen(PORT, () => {
     console.log(
