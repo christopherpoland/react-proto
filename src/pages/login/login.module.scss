@@ -3,6 +3,7 @@
     min-height: 400px;
     border-radius: var(--border-radius);
     background: var(--main-bg-color);
+    display: flex;
   }
 .third {
     width: 247px;
@@ -13,11 +14,12 @@
     flex-direction: column;
     align-items: center;
     .logoContainer {
-        width: 147px;
+        width: auto;
         height: 82px;
         display: flex;
         justify-content: center;
         margin: 45px 0 40px 0;
+        object-fit: cover;
     }
     div {
         color: var(--grey-color);
@@ -43,5 +45,76 @@
         gap: 10px;
         margin: 20px;
     }
-  }
+}
+.email {
+    padding: 20px;
+    width: 100%;
+    .userTypeCont {
+        display: flex;
+    }
+    .userType {
+        text-transform: uppercase;
+        width: 50%;
+        text-align: center;
+        cursor: pointer;
+        padding: 10px 0px;;
+        margin: 30px auto;
+        border-bottom: 2px solid #DDDDDD;
+        color: #333333;
+
+    }
+    .selected {
+        color: var(--primary-button-color);
+        border-bottom: 2px solid var(--primary-button-color);
+        transition: 0.4s;
+    }
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    .inputWrap {
+        position: 'relative';
+        display: 'inline-flex';
+        width: 100%;
+        .icon {
+            width: '20px';
+            height: '20px';
+            margin-left: -30px;
+            margin-top: 5px;
+        }
+        input {
+            padding-right: 30px;
+        }
+    }
+    input {
+        border: none;
+        border-bottom: 2px solid #DDDDDD;
+        padding: 10px;
+        font-weight: 300;
+        margin: 10px 0;
+        color: black;
+        width: 100%;
+        text-decoration: none;
+    }
+    input::placeholder {
+        font-size: 14px;
+        text-decoration: none;
+    }
+    input:focus {
+        outline: none;
+        border-bottom: 2px solid var(--primary-button-color);
+    }
+    .forgot {
+        text-decoration: none;
+        margin: 19px 0 19px auto;
+        max-width: 160px;
+    }
+    button[type='submit'] {
+        // margin: 30px 0 0px 0;
+        position: relative;
+        bottom: -22px;
+    }
+   
+}
   
